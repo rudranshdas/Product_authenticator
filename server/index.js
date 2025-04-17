@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 // Connect to Ganache
 const web3 = new Web3('http://localhost:7545');
 const contractABI = require('../build/contracts/ProductAuth.json').abi;
-const contractAddress = '0x2176C5ab0bbB019D505b695eD3aED0F63D57EFe4'; // Replace after deployment
+const contractAddress = '0xE7DAcE812E6D09EEe607cca07Bd521E042659a45'; // Replace after deployment
 
 const productAuth = new web3.eth.Contract(contractABI, contractAddress);
 

@@ -1,0 +1,69 @@
+.manufacturer-page {
+    display: flex;
+    justify-content: center;
+    align-items: start; /* align to top instead of center */
+    height: 100vh;
+    background-color: #007BFF;
+    padding-top: 60px; /* push it slightly down from the top */
+  }
+
+.manufacturer-form {
+  background-color: white; /* White form box */
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #007BFF; /* Blue text */
+}
+
+.manufacturer-form h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #007BFF;
+  text-align: center;
+}
+
+.manufacturer-form label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.manufacturer-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #007BFF;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.manufacturer-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.manufacturer-form button:hover {
+  background-color: #005bb5;
+}
+
+.qr-result {
+  margin-top: 30px;
+  text-align: center;
+  color: #007BFF;
+}
+
+.qr-result img {
+  max-width: 200px;
+  margin-bottom: 10px;
+}

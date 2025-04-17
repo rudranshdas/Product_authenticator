@@ -2,11 +2,12 @@ import React, { useState, useRef, useCallback } from 'react';
 import Webcam from 'react-webcam';
 import jsQR from 'jsqr';
 import axios from 'axios';
+import './Customer.css'; // make sure to create and import this
 
 const videoConstraints = {
   facingMode: 'environment',
-  width: 1280,
-  height: 720
+  width: 640,
+  height: 480
 };
 
 function Customer() {
@@ -18,14 +19,14 @@ function Customer() {
     const canvas = canvasRef.current;
     const video = webcamRef.current.video;
     const context = canvas.getContext('2d');
-    
+
     canvas.width = video.videoWidth;
     canvas.height = video.videoHeight;
     context.drawImage(video, 0, 0, canvas.width, canvas.height);
-    
+
     const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
     const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
-    
+
     if (qrCode) {
       setResult(qrCode.data);
       verifyProduct(qrCode.data);
@@ -43,22 +44,19 @@ function Customer() {
 
   return (
     <div className="scanner-container">
-      <h2>Verify Product</h2>
-      <div style={{ position: 'relative' }}>
+      <h2 className="scanner-heading">Verify Product</h2>
+      <div className="webcam-wrapper">
         <Webcam
           audio={false}
           ref={webcamRef}
           screenshotFormat="image/jpeg"
           videoConstraints={videoConstraints}
-          style={{ width: '100%' }}
+          className="webcam-feed"
         />
-        <canvas
-          ref={canvasRef}
-          style={{ display: 'none' }}
-        />
+        <canvas ref={canvasRef} style={{ display: 'none' }} />
       </div>
-      <button onClick={capture}>Scan QR Code</button>
-      {result && <p>Scanned: {result}</p>}
+      <button className="scan-btn" onClick={capture}>Scan QR Code</button>
+      {result && <p className="scan-result">Scanned: <span>{result}</span></p>}
     </div>
   );
 }

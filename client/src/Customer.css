@@ -1,0 +1,58 @@
+.scanner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #007BFF;
+    height: 100vh;
+    padding-top: 40px;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .scanner-heading {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .webcam-wrapper {
+    border: 4px solid white;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .webcam-feed {
+    width: 640px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .scan-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #007BFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .scan-btn:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .scan-result {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .scan-result span {
+    color: #ffffff;
+    font-weight: 700;
+  }
+  

@@ -1,0 +1,38 @@
+{
+  "0x170788a16230657541bfd2e2d7a1b47c4f9dc1a1127118bcf7e9490cb63acab3": {
+    "name": "wdfrwd",
+    "batch": "123",
+    "manufactureDate": "2025-04-15",
+    "expiryDate": "2025-04-30",
+    "details": "qwer",
+    "registeredBy": "0x6577c5bfa0327bd24b9838846c6454dc2da223bd",
+    "registrationTime": 1745479474
+  },
+  "0xcaee79bb5feca2c17fb20feb9ce30ddc499c3088179d20a6c95fecf1794ec2c2": {
+    "name": "efwrgegg",
+    "batch": "123456",
+    "manufactureDate": "2025-04-08",
+    "expiryDate": "2025-04-30",
+    "details": "wert",
+    "registeredBy": "0x6577c5bfa0327bd24b9838846c6454dc2da223bd",
+    "registrationTime": 1745480097
+  },
+  "0xcf9c89961b4c8a56e90a9124e6c5364e0e88ec1936be09b32d848fc8e8f9b226": {
+    "name": "product",
+    "batch": "123456789",
+    "manufactureDate": "2025-04-16",
+    "expiryDate": "2025-04-30",
+    "details": "yo",
+    "registeredBy": "0x6577c5bfa0327bd24b9838846c6454dc2da223bd",
+    "registrationTime": 1745480974
+  },
+  "0x3a831f70cd9116bb1d15840fe2d4ccebe23231734fcb5affe16fc2b3f37f3057": {
+    "name": "abct",
+    "batch": "12345",
+    "manufactureDate": "2025-04-17",
+    "expiryDate": "2025-04-09",
+    "details": "yo",
+    "registeredBy": "0x6577c5bfa0327bd24b9838846c6454dc2da223bd",
+    "registrationTime": 1745481114
+  }
+}
